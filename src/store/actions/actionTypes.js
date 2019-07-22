@@ -1,0 +1,1 @@
+export const LOAD_SHOP_LIST = "LOAD_SHOP_LIST"

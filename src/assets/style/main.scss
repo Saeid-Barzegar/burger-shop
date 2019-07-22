@@ -1,0 +1,214 @@
+@import './fonts';
+@import './colors';
+@import './font-awesome/font-awesome';
+
+body{
+
+    font-family: 'Source Sans Pro';
+    background-image: url('../images/bg_dirt.jpg');
+    background-repeat: repeat; 
+    
+
+    .App{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+
+        nav{
+            display: block;
+            width: 980px;
+            height: 110px;
+            direction: rtl;
+            text-align: right;
+            margin: 0px auto;
+            margin-top: -16px;
+            line-height: 110px;
+            position: relative;
+            
+            ul{
+                list-style: none;
+                background: $black;
+                opacity: 0.5;
+                height: 110px;
+                line-height: 110px;
+                padding-inline-start: 20px;
+
+                a{
+                    float: right;
+                    width: 140px;
+                    height: 33px;
+                    padding: 0 10px;
+                    text-decoration: none;
+                    position: relative;
+                    background: $white;
+                    color: $black;
+                    line-height: 33px;
+                    text-align: center;
+                    margin: 58px 0 20px 20px;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    font-family: inherit;
+                }
+            }
+            .logo{
+                height: 170px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+        }
+    
+        .container{
+            width: 980px;
+            padding: 20px;
+            padding-top: 0px;
+            margin: 0 auto;
+            margin-top: -110px;
+            background: $white;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 20px $black, -10px 10px 20px $black;
+
+            .header{
+                .headerImage{
+                    margin-top: -110px;
+                    margin-left: -20px;
+                }
+                .headerTitle{
+                    font-size: 60px;
+                    font-weight: 900;
+                    color: #ffffff;
+                    width: 500px;
+                    position: absolute;
+                    margin: -253px;
+                    margin-left: 420px;
+                    text-align: right;
+                    padding: 0 5px;
+                    box-sizing: border-box;
+                    text-shadow: 1px 3px 5px $black;
+                    font-family: 'Arvo';
+                }
+            }
+
+            .title{
+                font-family: 'Arvo';
+                color: $red;
+                font-size: 24pt;
+                font-weight: bold;
+                margin-top: 10px;
+                display: block;
+            }
+            .list{
+                list-style: none;
+                padding-inline-start: 0;
+                margin-bottom: 50px;
+
+                li{
+                    height: 85px;
+                    line-height: 63px;
+                    width: 100%;
+                    border: 1px solid $gray;
+                    padding: 10px 20px 10px 20px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                    box-shadow: 1px 1px 4px $gray;
+                    font-size: 14pt;
+
+                    .rating{
+                        margin-right: 10px;
+                    }
+
+                    .shopName{
+                        font-weight: bold;
+                        margin-right: 20px;
+                        width: 200px;
+                        display: inline-block;
+                    }
+                    .option{
+                        margin-right: 20px;
+                    }
+                    .address{
+                        font-weight: bold;
+                        color: $orange;
+                        float: right;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: $red;
+                        }
+
+                        i{
+                            color: $black;
+                        }
+                    }
+                }
+            }
+
+            .detailsBox{
+                width: 460px;
+                height: 255px;
+                background: #ffffff;
+                position: fixed;
+                margin: 250px;
+                top: 0;
+                border: 1px solid #262626;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px $gray, -2px 2px 5px $gray, 2px -2px 5px $gray, -2px -2px 5px $gray;
+                box-sizing: border-box;
+                padding: 20px;
+                
+
+                i{
+                    font-size: 20pt;
+                    cursor: pointer;
+                    float: right;
+                }
+
+                .details{
+                    font-size: 14pt;
+                    .name{
+
+                    }
+                    .address{
+                        margin: 40px 0;
+                        p{
+                            margin: 5px 0 5px 0;
+                        }
+                    }
+                    a{
+                        font-weight: bold;
+                        color: $orange;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .bottomLink{
+                height: 45px;
+                width: 100%;
+                background: $red;
+                border-radius: 5px;
+                line-height: 45px;
+                text-align: center;
+                font-size: 18pt;
+                font-weight: bold;
+                font-family: 'Arvo';
+                display: block;
+                cursor: pointer;
+                text-shadow: 1px 1px 2px $black;
+                box-shadow: 1px 1px 2px $black;
+
+                
+
+            }
+
+            .footer{
+                width: 980px;
+                height: 30px;
+                background: $black;
+                position: relative;
+                margin: 100px 0 -20px -20px;
+            }
+        }
+    }
+}
