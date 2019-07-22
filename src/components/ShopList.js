@@ -44,7 +44,7 @@ const Vergleich = ({shopList, fetchShopList}) => {
             : <h1 className="red">Loading Data from server...</h1>
             }
 
-            <a href="https://burgervergleich.autoteile.check24.de" className="bottomLink orange">
+            <a href="https://localhost:3000" className="bottomLink orange">
                 <i className="fa fa-cloud-download" ></i>
                 <span>Get more burger shops</span>
             </a>
