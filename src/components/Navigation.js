@@ -4,18 +4,18 @@ import logo from "../assets/images/logo.png";
 
 const navs = [
     {
-        to: '/standorte',
-        label: 'STANDORTE',
+        to: '/contact',
+        label: 'CONTACT US',
         exact: false
     },
     {
-        to: '/impressum',
-        label: 'IMPRESSUM',
+        to: '/about',
+        label: 'ABOUT US',
         exact: false
     },
     {
         to: '/',
-        label: 'VERGLEICH',
+        label: 'SHOP LIST',
         exact: true
     }   
 ]

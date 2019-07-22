@@ -2,8 +2,8 @@ import React, {useState,useEffect}from 'react';
 import { connect } from "react-redux";
 import * as actionCreator from "../store/actions/actions";
 import image_1 from "../assets/images/slide_1.jpg";
-import RateComponent from "./Vuergleich/RateComponent";
-import OptionComponent from "./Vuergleich/OptionComponent";
+import RateComponent from "./shopList/RateComponent";
+import OptionComponent from "./shopList/OptionComponent";
 import Slider from "./Slider";
 
 const Vergleich = ({shopList, fetchShopList}) => {
@@ -24,8 +24,8 @@ const Vergleich = ({shopList, fetchShopList}) => {
 
     return(
          <React.Fragment>
-            <Slider image={image_1} title="Jetzt Burger mit Bio Fleisch probieren" />
-            <span className="title">Vergleiche Deine Burgerläden</span>
+            <Slider image={image_1} title="Now try a burger with organic meat" />
+            <span className="title">Compare your burger shops</span>
 
             {shopList.length > 0 ?
             <ul className="list">
@@ -46,7 +46,7 @@ const Vergleich = ({shopList, fetchShopList}) => {
 
             <a href="https://burgervergleich.autoteile.check24.de" className="bottomLink orange">
                 <i className="fa fa-cloud-download" ></i>
-                <span>Weitere Burgerladen holen</span>
+                <span>Get more burger shops</span>
             </a>
             {
                 showDetails && selectedShop && <div className="detailsBox">
@@ -61,7 +61,7 @@ const Vergleich = ({shopList, fetchShopList}) => {
                                             <p>{selectedShop.zip}, {selectedShop.city}</p>
                                         </div>
 
-                                        <a href={selectedShop.website}>Zur Website</a>
+                                        <a href={selectedShop.website}>Website</a>
                                     </div>
                                 </div>
             }

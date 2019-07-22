@@ -1,23 +1,23 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
-import Vergleich from "./components/Vergleich";
-import Impressum from "./components/Impressum";
-import Standorte from "./components/Standorte";
+import ShopList from "./components/ShopList";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 const routes = [
     {
         path: '/',
-        component: Vergleich,
+        component: ShopList,
         exact: true
     },
     {
-        path: '/standorte',
-        component: Standorte,
+        path: '/about',
+        component: About,
         exact: false           
     },
     {
-        path: '/impressum',
-        component: Impressum,
+        path: '/contact',
+        component: Contact,
         exact: false  
     },
 ]
