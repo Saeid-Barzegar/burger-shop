@@ -7,12 +7,12 @@ const loadShops = payload =>{
     }
 }
 
-
 export const fetchShopList = ()=>{
     return async dispatch =>{
-        await fetch('https://burgervergleich.autoteile.check24.de/api/comparison.json')
-        .then(response=> response.json())
-        .then(data=> dispatch(loadShops(data)))
+        await import('../../api/comparison.json')
+        .then(data=> {
+            return dispatch(loadShops(data.default))
+        })
         .catch(error => console.log(error))
     }
 }
