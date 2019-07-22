@@ -9,10 +9,9 @@ const loadShops = payload =>{
 
 export const fetchShopList = ()=>{
     return async dispatch =>{
-        await import('../../api/comparison.json')
-        .then(data=> {
-            return dispatch(loadShops(data.default))
-        })
+        await fetch('http://localhost:3000/api/comparison.json')
+        .then(response=> response.json())
+        .then(data => dispatch(loadShops(data)))
         .catch(error => console.log(error))
     }
 }

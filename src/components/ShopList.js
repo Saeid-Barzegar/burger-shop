@@ -27,7 +27,7 @@ const Vergleich = ({shopList, fetchShopList}) => {
             <Slider image={image_1} title="Now try a burger with organic meat" />
             <span className="title">Compare your burger shops</span>
 
-            {shopList.length > 0 ?
+            {shopList ?
             <ul className="list">
                 {
                     shopList.map((shop, index)=> 
